@@ -1,0 +1,608 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    padding: 40px 0;
+
+    background: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    color: #222222;
+}
+
+
+.page {
+
+    width: 50vw;
+
+    min-height: 790px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    border: 1px solid #555555;
+
+    background: #ffffff;
+}
+
+
+.left-space {
+
+    width: 12%;
+
+    flex-shrink: 0;
+
+    border-right: 1px solid #999999;
+
+    background: #ffffff;
+}
+
+
+.form-area {
+
+    width: 88%;
+
+    padding: 5px 42px 10px 42px;
+
+    background: #e9e9e9;
+}
+
+
+.required-info {
+
+    margin-bottom: 7px;
+
+    font-size: 9px;
+
+    color: #333333;
+}
+
+.required-info span {
+
+    color: red;
+
+    font-weight: bold;
+}
+
+
+.steps {
+
+    margin-bottom: 7px;
+
+    font-size: 10px;
+
+    color: #222222;
+}
+
+.steps b {
+
+    font-weight: bold;
+}
+
+h2 {
+
+    margin: 7px 0 2px 0;
+
+    color: red;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.form-row {
+
+    display: flex;
+
+    align-items: center;
+
+    min-height: 16px;
+
+    margin: 0;
+}
+
+
+.form-row > label {
+
+    width: 165px;
+
+    padding-right: 4px;
+
+    text-align: right;
+
+    font-weight: bold;
+
+    line-height: 14px;
+}
+
+
+.form-row > label span {
+
+    color: red;
+
+    margin-left: 1px;
+}
+
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+
+    width: 185px;
+
+    height: 16px;
+
+    padding: 0 3px;
+
+    border: 1px solid #999999;
+
+    border-radius: 0;
+
+    background: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+}
+
+
+.form-row select {
+
+    width: 100px;
+
+    height: 17px;
+
+    padding: 0;
+
+    border: 1px solid #999999;
+
+    border-radius: 0;
+
+    background: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+}
+
+.form-row select.country {
+
+    width: 230px;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+
+    outline: none;
+
+    border-color: #4a90e2;
+}
+
+
+.donation-row {
+
+    margin-top: 2px;
+}
+
+
+.radio-group {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    white-space: nowrap;
+}
+
+
+.radio-group label {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    font-weight: normal;
+
+    width: auto;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+
+input[type="radio"] {
+
+    width: 12px;
+
+    height: 12px;
+
+    margin: 0 2px 0 0;
+
+    vertical-align: middle;
+}
+
+
+.instruction {
+
+    margin-left: 31px;
+
+    margin-top: -1px;
+
+    font-size: 9px;
+}
+
+
+.other-row {
+
+    margin-top: 0;
+}
+
+
+.recurring-row {
+
+    margin-top: 3px;
+}
+
+
+.recurring-row > label {
+
+    width: 165px;
+}
+
+
+.recurring-row > div {
+
+    white-space: nowrap;
+}
+
+
+input[type="checkbox"] {
+
+    width: 12px;
+
+    height: 12px;
+
+    margin: 0 3px 0 0;
+
+    padding: 0;
+
+    vertical-align: middle;
+}
+
+
+.inline-label {
+
+    width: auto !important;
+
+    padding: 0 !important;
+
+    font-weight: normal !important;
+
+    text-align: left !important;
+
+    display: inline !important;
+}
+
+
+.recurring-note {
+
+    margin-left: 165px;
+
+    margin-top: -1px;
+
+    font-size: 9px;
+}
+
+
+.monthly {
+
+    margin-left: 165px;
+
+    margin-top: 1px;
+
+    font-size: 10px;
+}
+
+
+.small-input {
+
+    width: 55px;
+
+    height: 16px;
+
+    margin: 0 3px;
+
+    border: 1px solid #999999;
+}
+
+
+.tiny-input {
+
+    width: 30px;
+
+    height: 16px;
+
+    margin: 0 3px;
+
+    border: 1px solid #999999;
+}
+
+
+.honor-row {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    margin-top: 1px;
+}
+
+
+.honor-row > label {
+
+    width: 165px;
+
+    padding-right: 4px;
+
+    text-align: right;
+
+    font-weight: bold;
+
+    line-height: 13px;
+}
+
+
+.honor-row > div {
+
+    line-height: 14px;
+}
+
+
+.honor-row input[type="radio"] {
+
+    margin-right: 3px;
+}
+
+
+.additional-text {
+
+    margin: 0 0 2px 0;
+
+    font-size: 9px;
+
+    line-height: 11px;
+}
+
+
+.check-row {
+
+    display: flex;
+
+    align-items: center;
+
+    min-height: 15px;
+
+    margin-left: 0;
+}
+
+
+.check-row label {
+
+    font-size: 10px;
+
+    font-weight: normal;
+
+    cursor: pointer;
+}
+
+
+.comments-row {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    margin-top: 4px;
+}
+
+
+.comments-row > label {
+
+    width: 165px;
+
+    padding-right: 4px;
+
+    text-align: right;
+
+    font-weight: bold;
+
+    line-height: 11px;
+}
+
+
+.comments-row > label span {
+
+    font-size: 8px;
+
+    font-weight: normal;
+}
+
+
+.comments-row textarea {
+
+    width: 245px;
+
+    height: 55px;
+
+    resize: both;
+
+    padding: 2px;
+
+    border: 1px solid #999999;
+
+    border-radius: 0;
+
+    background: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+}
+
+
+.contact-section {
+
+    display: flex;
+
+    margin-top: 3px;
+}
+
+
+.contact-title {
+
+    width: 165px;
+
+    padding-right: 4px;
+
+    text-align: right;
+
+    font-weight: bold;
+
+    line-height: 15px;
+}
+
+
+.contact-options {
+
+    display: flex;
+
+    flex-direction: column;
+
+    line-height: 15px;
+}
+
+
+.contact-options label {
+
+    font-size: 10px;
+
+    font-weight: normal;
+}
+
+
+.newsletter {
+
+    margin-left: 0;
+
+    margin-top: 3px;
+
+    color: #777777;
+
+    font-size: 9px;
+
+    line-height: 13px;
+}
+
+
+.newsletter p {
+
+    margin: 0;
+}
+
+
+.newsletter label {
+
+    color: #333333;
+
+    font-size: 10px;
+}
+
+.volunteer {
+
+    margin-top: 3px;
+
+    font-size: 10px;
+
+    white-space: nowrap;
+}
+
+
+.separator {
+
+    height: 7px;
+
+    margin-top: 2px;
+
+    background: #ffffff;
+}
+
+
+.buttons {
+
+    text-align: center;
+
+    margin-top: 4px;
+}
+
+
+.buttons input {
+
+    padding: 1px 9px;
+
+    margin: 0 2px;
+
+    height: 19px;
+
+    border: 1px solid #888888;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        #ffffff,
+        #d6d6d6
+    );
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 9px;
+
+    cursor: pointer;
+}
+
+
+.buttons input:hover {
+
+    background: linear-gradient(
+        #eeeeee,
+        #c8c8c8
+    );
+}
+
+
+.security {
+
+    margin-top: 7px;
+
+    font-size: 9px;
+
+    line-height: 12px;
+
+    color: #333333;
+}
+
+
+.security p {
+
+    margin: 2px 0;
+}

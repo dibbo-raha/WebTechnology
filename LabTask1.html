@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Donor Information</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <div class="left-space"></div>
+
+        <div class="form-area">
+
+            <div class="required-info">
+                <span>*</span> - Denotes Required Information
+            </div>
+
+            <div class="steps">
+                <b>&gt; 1 Donation</b>
+                &nbsp;&nbsp;&nbsp;
+                &gt; 2 Confirmation
+                &nbsp;&nbsp;&nbsp;
+                &gt; Thank You!
+            </div>
+
+
+            <h2>Donor Information</h2>
+
+            <div class="form-row">
+                <label>First Name<span>*</span></label>
+                <input type="text" autofocus>
+            </div>
+
+            <div class="form-row">
+                <label>Last Name<span>*</span></label>
+                <input type="text">
+            </div>
+
+            <div class="form-row">
+                <label>Company</label>
+                <input type="text">
+            </div>
+
+            <div class="form-row">
+                <label>Address 1<span>*</span></label>
+                <input type="text">
+            </div>
+
+            <div class="form-row">
+                <label>Address 2</label>
+                <input type="text">
+            </div>
+
+            <div class="form-row">
+                <label>City<span>*</span></label>
+                <input type="text">
+            </div>
+
+            <div class="form-row">
+                <label>State<span>*</span></label>
+
+                <select>
+                    <option>Select a State</option>
+                    <option>Dhaka</option>
+                    <option>Chattogram</option>
+                    <option>Rajshahi</option>
+                    <option>Khulna</option>
+                    <option>Barishal</option>
+                    <option>Sylhet</option>
+                    <option>Rangpur</option>
+                    <option>Mymensingh</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label>Zip Code<span>*</span></label>
+                <input type="text">
+            </div>
+
+            <div class="form-row">
+                <label>Country<span>*</span></label>
+
+                <select class="country">
+                    <option>Select a Country</option>
+                    <option>Bangladesh</option>
+                    <option>India</option>
+                    <option>United States</option>
+                    <option>United Kingdom</option>
+                    <option>Canada</option>
+                    <option>Australia</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label>Phone</label>
+                <input type="text">
+            </div>
+
+            <div class="form-row">
+                <label>Fax</label>
+                <input type="text">
+            </div>
+
+            <div class="form-row">
+                <label>Email<span>*</span></label>
+                <input type="email">
+            </div>
+
+            <div class="form-row donation-row">
+
+                <label>Donation Amount<span>*</span></label>
+
+                <div class="radio-group">
+
+                    <label>
+                        <input type="radio" name="amount" value="none">
+                        None
+                    </label>
+
+                    <label>
+                        <input type="radio" name="amount" value="50">
+                        20tk
+                    </label>
+
+                    <label>
+                        <input type="radio" name="amount" value="75">
+                        50tk
+                    </label>
+
+                    <label>
+                        <input type="radio" name="amount" value="100">
+                        100tk
+                    </label>
+
+                    <label>
+                        <input type="radio" name="amount" value="250">
+                        200tk
+                    </label>
+
+                    <label>
+                        <input type="radio" name="amount" value="other">
+                        Other
+                    </label>
+
+                </div>
+
+            </div>
+
+            <div class="instruction">
+                (Check a button or type in your amount)
+            </div>
+
+
+            <div class="form-row other-row">
+                <label>Other Amount $</label>
+                <input type="text">
+            </div>
+
+
+            <div class="form-row recurring-row">
+
+                <label>Recurring Donation</label>
+
+                <div>
+
+                    <input type="checkbox" id="recurring">
+
+                    <label for="recurring" class="inline-label">
+                        I am interested in giving on a regular basis.
+                    </label>
+
+                </div>
+
+            </div>
+
+            <div class="recurring-note">
+                (Check if yes)
+            </div>
+
+
+            <div class="monthly">
+
+                Monthly Credit Card $
+                <input type="text" class="small-input">
+
+                For
+
+                <input type="text" class="tiny-input">
+
+                Months
+
+            </div>
+
+
+            <h2>Honorarium and Memorial Donation Information</h2>
+
+            <div class="honor-row">
+
+                <label>
+                    I would like to make this<br>
+                    donation
+                </label>
+
+                <div>
+
+                    <div>
+                        <input type="radio"
+                               name="donation-type"
+                               value="honor">
+                        To Honor
+                    </div>
+
+                    <div>
+                        <input type="radio"
+                               name="donation-type"
+                               value="memory">
+                        In Memory of
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-row">
+                <label>Name</label>
+                <input type="text">
+            </div>
+
+            <div class="form-row">
+                <label>Acknowledge Donation to</label>
+                <input type="text">
+            </div>
+
+            <div class="form-row">
+                <label>Address</label>
+                <input type="text">
+            </div>
+
+            <div class="form-row">
+                <label>City</label>
+                <input type="text">
+            </div>
+
+            <div class="form-row">
+
+                <label>State</label>
+
+                <select>
+                    <option>Select a State</option>
+                    <option>Dhaka</option>
+                    <option>Chattogram</option>
+                    <option>Rajshahi</option>
+                    <option>Khulna</option>
+                    <option>Sylhet</option>
+                </select>
+
+            </div>
+
+            <div class="form-row">
+                <label>Zip</label>
+                <input type="text">
+            </div>
+
+
+            <h2>Additional Information</h2>
+
+            <p class="additional-text">
+                Please enter your name, company or organization as you would like
+                it to appear in our publications:
+            </p>
+
+
+            <div class="form-row">
+                <label>Name</label>
+                <input type="text">
+            </div>
+
+
+            <div class="check-row">
+
+                <input type="checkbox" id="anonymous">
+
+                <label for="anonymous">
+                    I would like my gift to remain anonymous.
+                </label>
+
+            </div>
+
+
+            <div class="check-row">
+
+                <input type="checkbox" id="matching">
+
+                <label for="matching">
+                    My employer offers a matching gift program.
+                    I will mail the matching gift form.
+                </label>
+
+            </div>
+
+
+            <div class="check-row">
+
+                <input type="checkbox" id="thankyou">
+
+                <label for="thankyou">
+                    Please save the cost of acknowledging this gift by
+                    not mailing a thank you letter.
+                </label>
+
+            </div>
+
+
+            <div class="comments-row">
+
+                <label>
+                    Comments<br>
+                    <span>(Please type any questions or feedback here)</span>
+                </label>
+
+                <textarea></textarea>
+
+            </div>
+
+
+            <div class="contact-section">
+
+                <div class="contact-title">
+                    How may we contact you?
+                </div>
+
+                <div class="contact-options">
+
+                    <label>
+                        <input type="checkbox">
+                        E-mail
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Postal Mail
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Telephone
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Fax
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <div class="newsletter">
+
+                <p>
+                    I would like to receive newsletters and information
+                    about special events by:
+                </p>
+
+                <label>
+                    <input type="checkbox">
+                    E-mail
+                </label>
+
+                <br>
+
+                <label>
+                    <input type="checkbox">
+                    Postal Mail
+                </label>
+
+            </div>
+
+
+            <div class="volunteer">
+
+                <input type="checkbox">
+
+                <span>
+                    I would like information about volunteering with the organization.
+                </span>
+
+            </div>
+
+            <div class="separator"></div>
+
+
+            <div class="buttons">
+
+                <input type="reset" value="Reset">
+
+                <input type="submit" value="Continue">
+
+            </div>
+
+
+            <div class="security">
+
+                <p>
+                    🔒 Donate online with confidence.
+                    You are on a secure server.
+                </p>
+
+                <p>
+                    If you have any problems or questions,
+                    please contact support.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
